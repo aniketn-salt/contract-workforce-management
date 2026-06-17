@@ -1,0 +1,80 @@
+/** Eilisys V3 design tokens mapped from Figma variable definitions */
+export const tokens = {
+  colors: {
+    primaryText: "#1C1F23",
+    primaryBlue: "#4B8BF4",
+    blueHighlight: "#2B6CB0",
+    subtext: "#647388",
+    lightBlueBg: "#EBF8FF",
+    orangeHighlight: "#CC2E00",
+    white: "#FFFFFF",
+    creamBg: "#F2EEEB",
+    lightBlueSurface: "#F1FAFF",
+  },
+  spacing: {
+    md: "8px",
+    sectionX: "80px",
+    sectionGap: "48px",
+    contentMax: "1280px",
+  },
+  radius: {
+    sm: "2px",
+    md: "4px",
+    lg: "8px",
+    xl: "12px",
+    pill: "9999px",
+  },
+  typography: {
+    h1: {
+      fontFamily: "var(--font-plus-jakarta)",
+      fontSize: "56px",
+      lineHeight: "70px",
+      fontWeight: 600,
+      letterSpacing: "-0.02em",
+    },
+    h2: {
+      fontFamily: "var(--font-plus-jakarta)",
+      fontSize: "48px",
+      lineHeight: "60px",
+      fontWeight: 600,
+      letterSpacing: "-0.02em",
+    },
+    h4: {
+      fontFamily: "var(--font-plus-jakarta)",
+      fontSize: "24px",
+      lineHeight: "30px",
+      fontWeight: 600,
+      letterSpacing: "-0.02em",
+    },
+    h7Cta: {
+      fontFamily: "var(--font-plus-jakarta)",
+      fontSize: "18px",
+      lineHeight: "28px",
+      fontWeight: 600,
+    },
+    h8Cta: {
+      fontFamily: "var(--font-plus-jakarta)",
+      fontSize: "16px",
+      lineHeight: "24px",
+      fontWeight: 600,
+    },
+    body2: {
+      fontFamily: "var(--font-inter)",
+      fontSize: "18px",
+      lineHeight: "28px",
+      fontWeight: 400,
+    },
+    body4: {
+      fontFamily: "var(--font-inter)",
+      fontSize: "14px",
+      lineHeight: "20px",
+      fontWeight: 400,
+    },
+    caption: {
+      fontFamily: "var(--font-plus-jakarta)",
+      fontSize: "14px",
+      lineHeight: "20px",
+      fontWeight: 400,
+    },
+  },
+} as const;

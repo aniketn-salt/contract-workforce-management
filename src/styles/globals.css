@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+:root {
+  /* Eilisys V3 — mapped from Figma variable definitions */
+  --eilisys-primary-text: #1c1f23;
+  --eilisys-primary-blue: #4b8bf4;
+  --eilisys-blue-highlight: #2b6cb0;
+  --eilisys-subtext: #647388;
+  --eilisys-light-blue-bg: #ebf8ff;
+  --eilisys-orange-highlight: #cc2e00;
+  --eilisys-white: #ffffff;
+  --eilisys-cream-bg: #f2eeeb;
+  --eilisys-light-blue-surface: #f1faff;
+  --eilisys-blue-badge-border: rgba(43, 108, 176, 0.2);
+  --eilisys-dark-bg: #0f172a;
+  --eilisys-dark-subtext: #a9b1c2;
+  --eilisys-light-text: #edeff0;
+  --eilisys-success-green: #14be72;
+  --eilisys-border-gray: #d0d5dd;
+  --eilisys-surface-gray: #f9fafb;
+
+  --spacing-md: 8px;
+  --section-x: 80px;
+  --section-y: 96px;
+  --section-gap: 48px;
+  --content-max: 1440px;
+  --content-inner: 1280px;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-pill: 9999px;
+
+  --shadow-small:
+    0px 2px 4px -2px rgba(0, 0, 0, 0.06),
+    0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+  --shadow-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-nav:
+    0px 2px 2px rgba(0, 0, 0, 0.06),
+    0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  --background: var(--eilisys-white);
+  --foreground: var(--eilisys-primary-text);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-eilisys-primary-text: var(--eilisys-primary-text);
+  --color-eilisys-primary-blue: var(--eilisys-primary-blue);
+  --color-eilisys-blue-highlight: var(--eilisys-blue-highlight);
+  --color-eilisys-subtext: var(--eilisys-subtext);
+  --color-eilisys-light-blue-bg: var(--eilisys-light-blue-bg);
+  --color-eilisys-orange-highlight: var(--eilisys-orange-highlight);
+  --color-eilisys-white: var(--eilisys-white);
+  --color-eilisys-cream-bg: var(--eilisys-cream-bg);
+  --color-eilisys-light-blue-surface: var(--eilisys-light-blue-surface);
+  --color-eilisys-dark-bg: var(--eilisys-dark-bg);
+  --color-eilisys-dark-subtext: var(--eilisys-dark-subtext);
+  --color-eilisys-light-text: var(--eilisys-light-text);
+  --color-eilisys-surface-gray: var(--eilisys-surface-gray);
+
+  --font-heading: var(--font-plus-jakarta);
+  --font-body: var(--font-inter);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.text-h1 {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  font-size: 56px;
+  line-height: 70px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.text-h2 {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.text-h4 {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.text-h5 {
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.text-body-2 {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.text-body-4 {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.cta-overlay {
+  background-color: rgba(15, 23, 42, 0.5);
+}
+
+.industry-card-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 33%,
+    #ffffff 74%
+  );
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.hero-gradient-accent {
+  background-image: linear-gradient(
+    114.82deg,
+    rgba(255, 178, 55, 0.48) 6.45%,
+    rgba(58, 128, 243, 0.48) 13.48%
+  );
+}
+
+.hero-clip-diagonal {
+  clip-path: polygon(11% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 1023px) {
+  .hero-clip-diagonal {
+    clip-path: none;
+  }
+}
+
+.trusted-by-fade-left {
+  background: linear-gradient(
+    to right,
+    var(--eilisys-white) 0%,
+    var(--eilisys-white) 4%,
+    transparent 50%
+  );
+}
+
+.trusted-by-fade-right {
+  background: linear-gradient(
+    to left,
+    var(--eilisys-white) 0%,
+    var(--eilisys-white) 4%,
+    transparent 50%
+  );
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --section-x: 24px;
+  }
+}
