@@ -2,7 +2,6 @@
 
 Pixel-perfect marketing landing page for **Eilisys Ascent Contract Workforce Management**, built from Figma and implemented with Next.js.
 
-**Live preview:** run locally at [http://localhost:3000](http://localhost:3000)
 
 **Repository:** [github.com/aniketn-salt/contract-workforce-management](https://github.com/aniketn-salt/contract-workforce-management)
 
