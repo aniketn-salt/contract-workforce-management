@@ -12,8 +12,6 @@ Pixel-perfect marketing landing page for **Eilisys Ascent Contract Workforce Man
 
 A full-width, section-based landing page covering product positioning, capabilities, industries, testimonials, implementation steps, FAQ, and CTA - aligned to the Eilisys design system.
 
-**Design source (Figma):** [Contract Workforce Management - node 2523:21111](https://www.figma.com/design/bJMU6wbQmOJB5tdya492qs/Eilisys-Salt-Design--SEO-Pages---Internal-?node-id=2523-21111)
-
 ---
 
 ## Tech Stack
